@@ -10,10 +10,10 @@
     <h1 class="text-2xl font-bold text-primary mb-6">Wpisz swoją datę urodzenia</h1>
     <form id="birthdayForm" class="flex flex-col items-center gap-4">
       <div class="flex gap-4">
-        <input type="number" id="birthDay" placeholder="Dzień" min="1" max="31" required class="border border-gray-300 p-2 rounded w-40">
-        <input type="number" id="birthMonth" placeholder="Miesiąc" min="1" max="12" required class="border border-gray-300 p-2 rounded w-40">
+        <input type="number" id="birthDay" placeholder="Dzień" min="1" max="31" required class="border border-gray-300 p-2 rounded w-80">
+        <input type="number" id="birthMonth" placeholder="Miesiąc" min="1" max="12" required class="border border-gray-300 p-2 rounded w-80">
       </div>
-      <button type="submit" class="bg-blue-300 p-4 rounded text-white font-bold">Oblicz</button>
+      <button type="submit" class="bg-blue-300 p-4 rounded text-white font-bold mt-4">Oblicz</button>
       <dialog id="result" class="bg-gray-200 text-red-600 p-8 relative">
         <button type="button" id="close" class="absolute top-2 right-4 text-xl font-bold">x</button>
         <div id="dialogText" class="mt-4 text-center"></div>

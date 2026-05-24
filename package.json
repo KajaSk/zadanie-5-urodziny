@@ -15,5 +15,5 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.3.0",
     "dayjs": "^1.11.20"
-  }
+  } 
 }

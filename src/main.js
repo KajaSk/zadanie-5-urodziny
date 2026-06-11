@@ -9,14 +9,11 @@ const dialogText = document.getElementById('dialogText');
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   
-  const birthDay = document.getElementById('birthDay').value;
-  const birthMonth = document.getElementById('birthMonth').value;
+  const birthDateValue = document.getElementById('birthdate').value;
+  if (!birthDateValue) return;
 
   const today = dayjs().startOf('day');
-  const currentYear = today.year();
-
-  const fullDate = currentYear + "-" + birthMonth + "-" + birthDay;
-  const birthdayThisYear = dayjs(fullDate).startOf('day');
+  const birthdayThisYear = dayjs(birthDateValue).year(today.year()).startOf('day
 
   let lastBirthday = birthdayThisYear;
   if(birthdayThisYear.isAfter(today)){

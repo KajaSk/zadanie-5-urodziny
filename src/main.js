@@ -13,7 +13,7 @@ form.addEventListener('submit', (event) => {
   if (!birthDateValue) return;
 
   const today = dayjs().startOf('day');
-  const birthdayThisYear = dayjs(birthDateValue).year(today.year()).startOf('day
+  const birthdayThisYear = dayjs(birthDateValue).year(today.year()).startOf('day');
 
   let lastBirthday = birthdayThisYear;
   if(birthdayThisYear.isAfter(today)){
